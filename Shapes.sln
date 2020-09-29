@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shapes", "Shapes\Shapes.csproj", "{6E488FA3-0D52-4006-B560-2777838B16E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab2ITH2020.Program", "Lab2ITH2020.Program\Lab2ITH2020.Program.csproj", "{9CBD125A-0ECB-4FDB-91C3-E29EBD699692}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E488FA3-0D52-4006-B560-2777838B16E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E488FA3-0D52-4006-B560-2777838B16E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E488FA3-0D52-4006-B560-2777838B16E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E488FA3-0D52-4006-B560-2777838B16E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CBD125A-0ECB-4FDB-91C3-E29EBD699692}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CBD125A-0ECB-4FDB-91C3-E29EBD699692}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CBD125A-0ECB-4FDB-91C3-E29EBD699692}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CBD125A-0ECB-4FDB-91C3-E29EBD699692}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
