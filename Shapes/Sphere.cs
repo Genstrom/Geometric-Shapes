@@ -24,7 +24,6 @@ namespace Shapes
 
         public override string Name => "Sphere";
 
-
         public override string ToString()
         {
             return $"sphere @({_center.X:0.0}, {_center.Y:0.0}, {_center.Z:0.0}): r = {_radius:0.0}";

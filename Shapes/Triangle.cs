@@ -59,12 +59,10 @@ namespace Shapes
             }
         }
 
-
         public IEnumerator GetEnumerator()
         {
             return this;
         }
-
 
         public object Current => _pointArray[_idx];
 

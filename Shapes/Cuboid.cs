@@ -20,7 +20,6 @@ namespace Shapes
             _size = new Vector3(width, width, width);
         }
 
-
         public override Vector3 Center => new Vector3(_center.X, _center.Y, _center.Z);
 
         public override float Area => 2 * (_size.X * _size.Y + _size.Y * _size.Z + _size.Z * _size.X);
@@ -31,7 +30,6 @@ namespace Shapes
             _size.X == _size.Y && _size.X == _size.Z && _size.Y == _size.Z
                 ? "cube"
                 : "cuboid";
-
 
         public override string ToString()
         {

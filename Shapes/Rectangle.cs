@@ -24,8 +24,7 @@ namespace Shapes
         public override float Area => _size.X * _size.Y;
 
         public override float Circumference => _size.X * 2 + _size.Y * 2;
-
-
+        
         public override string ToString()
         {
             var measures = $"@({_center.X:0.0}, {_center.Y:0.0}): w = {_size.X:0.0}, h = {_size.Y:0.0}";

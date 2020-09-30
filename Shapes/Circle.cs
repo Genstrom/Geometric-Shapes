@@ -8,7 +8,6 @@ namespace Shapes
         private readonly Vector2 _center;
         private readonly float _radius;
 
-        //Constructors
 
         public Circle(Vector2 center, float radius)
         {
@@ -17,7 +16,6 @@ namespace Shapes
         }
 
         public override float Circumference => Convert.ToSingle(_radius * (2 * Math.PI));
-
 
         public override float Area => Convert.ToSingle(Math.Pow(_radius, 2) * Math.PI);
 

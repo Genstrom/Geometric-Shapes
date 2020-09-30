@@ -9,17 +9,17 @@ namespace Shapes
         public abstract Vector3 Center { get; }
         public abstract float Area { get; }
 
-        public static Vector3 RndVector3()
+        private static Vector3 RndVector3()
         {
             return new Vector3(RndFloat(), RndFloat(), RndFloat());
         }
 
-        public static Vector2 RndVector2()
+        private static Vector2 RndVector2()
         {
             return new Vector2(RndFloat(), RndFloat());
         }
 
-        public static float RndFloat()
+        private static float RndFloat()
         {
             var rndFloat = (float) Rnd.NextDouble() * 10 + 1;
             return rndFloat;
