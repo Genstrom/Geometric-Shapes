@@ -18,23 +18,9 @@ namespace Shapes
 
         public override Vector3 Center => new Vector3(_center.X, _center.Y, _center.Z);
 
-        public override float Area
-        {
-            get
-            {
-                var area = 4 * Math.PI * Math.Pow(_radius, 2);
-                return Convert.ToSingle(area);
-            }
-        }
+        public override float Area => Convert.ToSingle(4 * Math.PI * Math.Pow(-_radius, 2));
 
-        public override float Volume
-        {
-            get
-            {
-                var volume = 4 * Math.PI * Math.Pow(_radius, 3) / 3;
-                return Convert.ToSingle(volume);
-            }
-        }
+        public override float Volume => Convert.ToSingle(4 * Math.PI * Math.Pow(_radius, 3)) / 3;
 
         public override string Name => "Sphere";
 

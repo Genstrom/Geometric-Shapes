@@ -16,35 +16,12 @@ namespace Shapes
             _radius = radius;
         }
 
-        public override float Circumference
-        {
-            get
-            {
-                var circumference = _radius * (2 * Math.PI);
-                var circumferenceAsFloat = Convert.ToSingle(circumference);
-                return circumferenceAsFloat;
-            }
-        }
+        public override float Circumference => Convert.ToSingle(_radius * (2 * Math.PI));
 
-        public override float Area
-        {
-            get
-            {
-                var area = Math.Pow(_radius, 2) * Math.PI;
-                var areaAsFloat = Convert.ToSingle(area);
-                return areaAsFloat;
-            }
-        }
 
-        public override Vector3 Center
-        {
-            get
-            {
-                var centerPoint = new Vector3(_center, 0);
-                return centerPoint;
-            }
-        }
+        public override float Area => Convert.ToSingle(Math.Pow(_radius, 2) * Math.PI);
 
+        public override Vector3 Center => new Vector3(_center.X, _center.Y, 0);
 
         public override string ToString()
         {
