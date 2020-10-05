@@ -15,9 +15,9 @@ namespace Shapes
             _radius = radius;
         }
 
-        public override float Circumference => Convert.ToSingle(_radius * (2 * Math.PI));
+        public override float Circumference => _radius * (2 * MathF.PI);
 
-        public override float Area => Convert.ToSingle(Math.Pow(_radius, 2) * Math.PI);
+        public override float Area => MathF.Pow(_radius, 2) * MathF.PI;
 
         public override Vector3 Center => new Vector3(_center.X, _center.Y, 0);
 

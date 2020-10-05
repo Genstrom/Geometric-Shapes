@@ -42,7 +42,7 @@ namespace Shapes
                 var c = _pointC.X * (_pointA.Y - _pointB.Y);
 
                 var area = a + b + c;
-                area = Math.Abs(area) / 2;
+                area = MathF.Abs(area) / 2;
                 return area;
             }
         }
@@ -51,11 +51,12 @@ namespace Shapes
         {
             get
             {
-                var a = Math.Sqrt(Math.Pow(_pointB.X - _pointC.X, 2) + Math.Pow(_pointB.Y - _pointC.Y, 2));
-                var b = Math.Sqrt(Math.Pow(_pointA.X - _pointC.X, 2) + Math.Pow(_pointA.Y - _pointC.Y, 2));
-                var c = Math.Sqrt(Math.Pow(_pointA.X - _pointB.X, 2) + Math.Pow(_pointA.Y - _pointB.Y, 2));
-                var circumference = a + b + c;
-                return Convert.ToSingle(circumference);
+                var a = MathF.Sqrt(MathF.Pow(_pointB.X - _pointC.X, 2) + MathF.Pow(_pointB.Y - _pointC.Y, 2));
+                var b = MathF.Sqrt(MathF.Pow(_pointA.X - _pointC.X, 2) + MathF.Pow(_pointA.Y - _pointC.Y, 2));
+                var c = MathF.Sqrt(MathF.Pow(_pointA.X - _pointB.X, 2) + MathF.Pow(_pointA.Y - _pointB.Y, 2));
+               var circumference = a + b + c;
+               return circumference;
+
             }
         }
 
