@@ -23,7 +23,7 @@ namespace Shapes
 
         public override string ToString()
         {
-            return $"circle @({_center.X:0.0}, {_center.Y:0.0}): r = {_radius:0.0}";
+            return $"circle @({_center.X:0.00}, {_center.Y:0.00}): r = {_radius:0.00}";
         }
     }
 }

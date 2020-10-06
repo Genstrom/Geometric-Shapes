@@ -20,8 +20,7 @@ namespace Shapes
             _pointC = pointC;
             _pointArray = new[] {pointA, pointB, pointC};
         }
-
-
+        
         public override Vector3 Center
         {
             get
@@ -81,7 +80,7 @@ namespace Shapes
         public override string ToString()
         {
             return
-                $"triangle @({Center.X:0.0}, {Center.Y:0.0}): p1({_pointA.X:0.0}, {_pointA.Y:0.0}), p2({_pointB.X:0.0}, {_pointB.Y:0.0}), p3({_pointC.X:0.0}, {_pointC.Y:0.0})";
+                $"triangle @({Center.X:0.00}, {Center.Y:0.00}): p1({_pointA.X:0.00}, {_pointA.Y:0.00}), p2({_pointB.X:0.00}, {_pointB.Y:0.00}), p3({_pointC.X:0.00}, {_pointC.Y:0.00})";
         }
     }
 }

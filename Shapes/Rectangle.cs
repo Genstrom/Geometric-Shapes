@@ -27,7 +27,7 @@ namespace Shapes
         
         public override string ToString()
         {
-            var measures = $"@({_center.X:0.0}, {_center.Y:0.0}): w = {_size.X:0.0}, h = {_size.Y:0.0}";
+            var measures = $"@({_center.X:0.00}, {_center.Y:0.00}): w = {_size.X:0.00}, h = {_size.Y:0.00}";
 
             return _size.X == _size.Y
                 ? $"square {measures}"

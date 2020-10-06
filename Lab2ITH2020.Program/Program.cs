@@ -29,7 +29,7 @@ namespace Lab2ITH2020.Program
 
             foreach (var t in shapeList)
                 area += Convert.ToInt64(t.Area);
-
+            
             foreach (var shape in shapeList)
             {
                 if (shape is Shape3D s && volume < s.Volume)
@@ -39,16 +39,17 @@ namespace Lab2ITH2020.Program
             }
 
 
-            Console.WriteLine($"The average Area of all shapes in the list is {area / shapeList.Count:0.0}");
-            Console.WriteLine($"The total of all circumference of all triangles in the list is {circumference:0.0}");
+            Console.WriteLine($"The average Area of all shapes in the list is {area / shapeList.Count:0.00}");
+            Console.WriteLine($"The total of all circumference of all triangles in the list is {circumference:0.00}");
             if (volumeShape3D != null)
                 Console.WriteLine(
-                    $"The shape with the largest volume in the list is a {volumeShape3D.Name} with the volume {volume:0.0} and these parameters \"{volumeShape3D}\"");
+                    $"The shape with the largest volume in the list is a {volumeShape3D.Name} with the volume {volume:0.00} and these parameters: \"{volumeShape3D}\"");
             else
                 Console.WriteLine(
                     "We usually write out the volume of the biggest shape here but there were no 3D shapes created");
             Console.WriteLine("The points of the triangle are at these coordinates: ");
             foreach (var point in triangle1) Console.Write($" {point} ");
+            
         }
     }
 }

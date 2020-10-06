@@ -6,8 +6,7 @@ namespace Shapes
     {
         private readonly Vector3 _center;
         private readonly Vector3 _size;
-
-
+        
         public Cuboid(Vector3 center, Vector3 size)
         {
             _center = center;
@@ -34,7 +33,7 @@ namespace Shapes
         public override string ToString()
         {
             var measures =
-                $"@({_center.X:0.0}, {_center.Y:0.0}, {_center.Z:0.0}): w = {_size.X:0.0}, h = {_size.Y:0.0}, l = {_size.Z:0.0}";
+                $"@({_center.X:0.00}, {_center.Y:0.00}, {_center.Z:0.00}): w = {_size.X:0.00}, h = {_size.Y:0.00}, l = {_size.Z:0.00}";
             return _size.X == _size.Y && _size.X == _size.Z && _size.Y == _size.Z
                 ? $"cube {measures}"
                 : $"cuboid {measures}";
