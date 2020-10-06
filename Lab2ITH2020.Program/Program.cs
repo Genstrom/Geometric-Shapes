@@ -27,8 +27,8 @@ namespace Lab2ITH2020.Program
                 if (shape is Triangle t)
                     circumference += t.Circumference;
 
-            foreach (var t in shapeList)
-                area += Convert.ToInt64(t.Area);
+            foreach (var shape in shapeList)
+                area += Convert.ToInt64(shape.Area);
             
             foreach (var shape in shapeList)
             {
