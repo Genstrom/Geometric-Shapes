@@ -15,7 +15,7 @@ namespace Lab2ITH2020.Program
             double area = 0;
             float volume = 0;
             var triangle = new Triangle(new Vector2(3.0f, 4.0f), new Vector2(5.0f, 6.0f), new Vector2(8.0f, 3.0f));
-            IEnumerable triangle1 = triangle;
+            
             
 
             var shapeList = new List<Shape>(20);
@@ -48,7 +48,7 @@ namespace Lab2ITH2020.Program
                 Console.WriteLine(
                     "We usually write out the volume of the biggest shape here but there were no 3D shapes created");
             Console.WriteLine("The points of the triangle are at these coordinates: ");
-            foreach (var point in triangle1) Console.Write($" {point} ");
+            foreach (var point in triangle) Console.Write($" {point} ");
             
         }
     }
