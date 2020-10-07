@@ -23,7 +23,7 @@ namespace Shapes
 
         public override float Area => _size.X * _size.Y;
 
-        public override float Circumference => _size.X * 2 + _size.Y * 2;
+        public override float Circumference => _size.X * 2.00f + _size.Y * 2.00f;
         
         public override string ToString()
         {

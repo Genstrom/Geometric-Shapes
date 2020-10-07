@@ -21,7 +21,7 @@ namespace Shapes
 
         public override Vector3 Center => _center;
 
-        public override float Area => 2 * (_size.X * _size.Y + _size.Y * _size.Z + _size.Z * _size.X);
+        public override float Area => 2.00f * (_size.X * _size.Y + _size.Y * _size.Z + _size.Z * _size.X);
 
         public override float Volume => _size.X * _size.Y * _size.Z;
 

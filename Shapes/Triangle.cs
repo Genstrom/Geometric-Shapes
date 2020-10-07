@@ -25,8 +25,8 @@ namespace Shapes
         {
             get
             {
-                var x = (_pointA.X + _pointB.X + _pointC.X) / 3;
-                var y = (_pointA.Y + _pointB.Y + _pointC.Y) / 3;
+                var x = (_pointA.X + _pointB.X + _pointC.X) / 3.00f;
+                var y = (_pointA.Y + _pointB.Y + _pointC.Y) / 3.00f;
 
                 return new Vector3(x, y, 0);
             }
@@ -41,7 +41,7 @@ namespace Shapes
                 var c = _pointC.X * (_pointA.Y - _pointB.Y);
 
                 var area = a + b + c;
-                area = MathF.Abs(area) / 2;
+                area = MathF.Abs(area) / 2.00f;
                 return area;
             }
         }

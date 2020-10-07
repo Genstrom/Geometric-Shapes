@@ -21,7 +21,7 @@ namespace Shapes
 
         private static float RndFloat()
         {
-            var rndFloat = (float) Rnd.NextDouble() * 10 + 1;
+            var rndFloat = (float) Rnd.NextDouble() * 10.00f + 1.00f;
             return rndFloat;
         }
 
