@@ -34,7 +34,7 @@ namespace Lab2ITH2020.Program
             {
                 if (shape is Shape3D s && volume < s.Volume)
                 {volume = s.Volume;
-                    Console.WriteLine(s.Volume);
+                   
 
                     volumeShape3D = shape as Shape3D;
                     
