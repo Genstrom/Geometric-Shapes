@@ -52,8 +52,6 @@ namespace Lab2ITH2020.Program
             Console.WriteLine("The points of the triangle are at these coordinates: ");
             //foreach (var point in triangle) Console.Write($" {point} ");
             
-            Sphere sphere = new Sphere(Vector3.Zero, 10.0f);
-            Console.WriteLine(sphere.Volume);
             
         }
     }
