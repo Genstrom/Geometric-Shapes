@@ -33,11 +33,9 @@ namespace Lab2ITH2020.Program
             foreach (var shape in shapeList)
             {
                 if (shape is Shape3D s && volume < s.Volume)
-                {volume = s.Volume;
-                   
-
+                {
+                    volume = s.Volume;
                     volumeShape3D = shape as Shape3D;
-                    
                 }
                 
             }
