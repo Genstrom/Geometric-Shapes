@@ -25,9 +25,9 @@ namespace Shapes
             return rndFloat;
         }
 
-        private static Triangle CalculatedTriangle(Vector2 point1, Vector2 point2)
+        private static Triangle CalculatedTriangle(Vector2 point1, Vector2 point2, Vector2 centerPoint)
         {
-            var centerPoint = RndVector2();
+            
             var point3X = centerPoint.X * 3 - point1.X - point2.X;
             var point3Y = centerPoint.Y * 3 - point1.Y - point2.Y;
             var point3 = new Vector2(point3X, point3Y);
@@ -60,7 +60,7 @@ namespace Shapes
                 }
                 case 3:
                 {
-                    var triangle = CalculatedTriangle(RndVector2(), RndVector2());
+                    var triangle = CalculatedTriangle(RndVector2(), RndVector2(), RndVector2());
                     return triangle;
                 }
                 case 4:
@@ -109,7 +109,7 @@ namespace Shapes
                 }
                 case 3:
                 {
-                    var triangle = CalculatedTriangle(RndVector2(), RndVector2());
+                    var triangle = CalculatedTriangle(RndVector2(), RndVector2(),centerVector2);
                     return triangle;
                 }
                 case 4:

@@ -14,12 +14,11 @@ namespace Lab2ITH2020.Program
             float circumference = 0;
             double area = 0;
             float volume = 0;
+            var center = new Vector3(3.00f,4.00f,3.00f);
             var triangle = new Triangle(new Vector2(3.0f, 4.0f), new Vector2(5.0f, 6.0f), new Vector2(8.0f, 3.0f));
             
-            
-
             var shapeList = new List<Shape>(20);
-            for (var i = 0; i < 20; i++) shapeList.Add(Shape.GenerateShape());
+            for (var i = 0; i < 20; i++) shapeList.Add(Shape.GenerateShape(center));
 
             foreach (var shape in shapeList) Console.WriteLine(shape);
 
